@@ -1,0 +1,94 @@
+﻿<html>
+<head>
+<title>corporateTravel</title>
+<script>
+function checkBranch()
+{
+	with(document.forms.corporate)
+	{
+		if(branch.value==0)
+		{
+			alert('Please Select the Industry Type')
+		}
+	}
+}
+function check1()
+{
+	with(document.forms.corporate)
+	{	
+		if(branch.value==1)
+		{
+			MyWin=window.open('file:///E:/javascript/PROJECT/CompInfo.html')
+		}
+		else if(branch.value==2)
+		{
+			MyWin=window.open('file:///E:/javascript/PROJECT/ElectricInfo.html')	
+		}
+		else if(branch.value==3)
+		{
+			MyWin=window.open('file:///E:/javascript/PROJECT/MechInfo.html')
+		}
+	}
+}
+function checkMail()
+{
+	with(document.forms.corporate)
+	{
+		var loc=mail.value.indexOf('@')
+		if(loc==-1)
+		{
+			alert('Invalid Email..!!!')
+		}
+	}
+}
+function checkNo()
+{
+	with(document.forms.corporate)
+	{
+		var re=/^[\(]?(\d{3})[\)]?[ -\.]?(\d{3})[ -\.]?(\d{4})$/
+		if(re.test(cNo.value))
+		{
+		}
+		else
+		{
+			alert('Enter Valid Number')
+		}
+	}
+}
+</script>
+</head>
+
+<body bgcolor="mangeeta">
+<center><h1><a href="index.html">Home</a></h2>
+			<br><br>
+<form name="corporate"/><center><h1>Information about Corporate travel</h1>
+<img src="\JSP_Project\images\corporate.jpg" height="300" width="350"/><br><br>
+Applicant Name<input type="text" name="aname"/><br><br>
+Contact No :<input type="text" name="cNo" onchange="checkNo()"><br><br>
+Email : <input type="text" name="mail" onchange="checkMail()"/><br><br>
+
+Select the Industry type:<select name="branch" size="2" onblur="checkBranch()">
+<option value=0>None</option>
+<option value=1>Computer</option>
+<option value=2>Electrical</option>
+<option value=3>Mechanical</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp
+ 
+<font color="red">* </font>Select Time: <select name="time1" size="2">
+<option value=0>None</option>
+<option value=1>10:00 AM </option>
+<option value=2>01:00 PM</option> 
+<option value=3>04:00 PM</option>
+</select>&nbsp;&nbsp;&nbsp;&nbsp 
+<font color="red">* </font>Select the Way of Travel :<select name="way" size="2">
+<option value=0>None</option>
+<option value=1>Bus</option>
+<option value=2>Van</option>
+</select><br><br>&nbsp;&nbsp
+
+Enter the Number of Members Visiting <input type="number" name="nofm"><br><br>
+<input type="button" name="button"value="Next" onclick="check1()" /><br><br>
+<font color="red">* </font>: optional fields we can inform you timings on to your mail 
+</form>
+</body>
+</html>

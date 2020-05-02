@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+<title>specialityFrame</title>
+<script>
+function temp(ch)
+{
+	with(document.forms.Tours)
+	{
+		if(ch==1)
+		{
+			document.location.href="TempleInfo.html"
+		}
+		if(ch==2)
+		{
+			document.location.href="WildLifeInfo.html"
+		}
+		if(ch==3)
+		{
+			document.location.href="museumsInfo.html"
+		}
+		if(ch==4)
+		{
+			document.location.href="HistoricalInfo.html"
+		}
+	
+	
+	}
+}
+</script>
+</head>
+<body bgcolor="lightblue">
+<form name="Tours"><center><h2>Information about Speciality Tours</h2>
+
+<h2><input type="button" name="temple" value="Temple" onclick="temp(1)"/></h2>
+<h2><input type="button" name="wildLife" value="WildLife" onclick="temp(2)"/></h2>
+<h2><input type="button" name="Museum" value="Museums" onclick="temp(3)"/></h2>
+<h2><input type="button" name="historical" value="Historical" onclick="temp(4)"/></h2>
+
+
+</form>
+</body>
+</html>
+
