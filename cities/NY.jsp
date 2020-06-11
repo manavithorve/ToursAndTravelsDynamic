@@ -11,7 +11,7 @@
 		<b>Population:</b> 85.4 lakhs (2016)<br/>
 		<b>Country:</b> United States of America<br/>
 		</font><br><br><br>
-		<center><img src="\JSP_Project\images\NewYork.jpg" height="500" width="590"/></center><br><br>
+		<center><img src="\ToursAndTravelsDyanamic\images\NewYork.jpg" height="500" width="590"/></center><br><br>
 		<center><a href="miami.jsp">Next</a>
 		<center><h1><font face="Arial Rounded MT" size="28">Visit the Temples</font></h1></center>
 		<%@include file="TempleInfo.html"%>

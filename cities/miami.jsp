@@ -14,7 +14,7 @@
 		<b>Population:</b> 4.54 lakhs (2016)<br/>
 		<b>Area code:</b> Area codes 305 and 786<br/>
 		</font><br><br><br>
-		<center><img src="\JSP_Project\images\Miami.jpg" height="500" width="590"/></center><br><br>
+		<center><img src="\ToursAndTravelsDyanamic\images\Miami.jpg" height="500" width="590"/></center><br><br>
 		<center><a href="tokyo.jsp">Next</a>
 		<center><h1><font face="Arial Rounded MT" size="28">Visit the Temples</font></h1></center>
 		<%@include file="TempleInfo.html"%>

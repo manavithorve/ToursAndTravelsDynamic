@@ -15,7 +15,7 @@
 		<b>Population:</b> 92.7 lakhs (2015) United Nations<br/>
 		<b>Island:</b> Honshu<br/>
 		</font><br><br><br>
-		<center><img src="\JSP_Project\images\Tokyo.jpg" height="500" width="590"/></center><br><br>
+		<center><img src="\ToursAndTravelsDyanamic\images\Tokyo.jpg" height="500" width="590"/></center><br><br>
 		<center><a href="Cities.jsp">Next</a>
 		<center><h1><font face="Arial Rounded MT" size="28">Visit the Temples</font></h1></center>
 		<%@include file="TempleInfo.html"%>
