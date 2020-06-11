@@ -12,7 +12,7 @@ pageEncoding="ISO-8859-1"%>
 	try
 	{
 		Class.forName("oracle.jdbc.OracleDriver");
-		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","System","123456");
+		Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/tours_and_travels?serverTimezone=UTC","root","");
 		out.println("Connection to :" +con);
 	}
 	catch(Exception e)

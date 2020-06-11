@@ -16,9 +16,9 @@
 		out.println("<h1><center>Your group id is: "+id+"</center></h1>");
 		try
 		{
-			Class.forName("oracle.jdbc.OracleDriver");
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","System","123456");
-			PreparedStatement ps=con.prepareStatement("insert into jspProject values(?,?,?,?)");
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/tours_and_travels?serverTimezone=UTC","root","");
+			PreparedStatement ps=con.prepareStatement("insert into tours_and_travels_table values(?,?,?,?)");
 			ps.setInt(1,id);
 			ps.setString(2,g_name);
 			ps.setString(3,g_leader);
