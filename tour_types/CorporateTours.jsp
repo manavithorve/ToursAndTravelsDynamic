@@ -67,7 +67,7 @@ function checkNo()
 <c:set var="now" value="<%=new java.util.Date()%>"/>
 <h2><c:out value="${now}"/></h2>
 <form name="corporate"/><center><h1>Information about Corporate travel</h1>
-<img src="\JSP_Project\images\corporate.jpg" height="300" width="350"/><br><br>
+<img src="\ToursAndTravelsDyanamic\images\corporate.jpg" height="300" width="350"/><br><br>
 Applicant Name<input type="text" name="aname"/><br><br>
 Contact No :<input type="text" name="cNo" onchange="checkNo()"><br><br>
 Email : <input type="text" name="mail" onchange="checkMail()"/><br><br>

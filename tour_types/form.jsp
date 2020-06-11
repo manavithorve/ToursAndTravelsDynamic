@@ -12,7 +12,7 @@
 		</script>
 	</head>
 	<body style="background-image:URL(bg1.jpg)">
-		<form  name="form1" action="/JSP_Project/Database.jsp">
+		<form  name="form1" action="\ToursAndTravelsDyanamic/Database.jsp">
 		<center><h1><font face="Arial Rounded MT" size="22">BOOK HERE</font></h1>
 			
 			Enter Group Leader Name : <input type="text" name="lfname" required/><br><br>
